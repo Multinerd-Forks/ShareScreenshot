@@ -10,6 +10,7 @@ import Foundation
 // Entry point to framework
 public class SSShareScreenshotManager {
     
+    @nonobjc
     public static let shared = SSShareScreenshotManager()
     
     // Custom activities, used for sharing

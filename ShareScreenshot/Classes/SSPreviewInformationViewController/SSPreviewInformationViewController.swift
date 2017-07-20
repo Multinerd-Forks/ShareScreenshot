@@ -34,6 +34,9 @@ class SSPreviewInformationViewController: UITableViewController {
         cancelButton.title = String.localized(key: "ssscreenshot.cancel")
         shareButton.title = String.localized(key: "ssscreenshot.share")
         title = String.localized(key: "ssscreenshot.info")
+        
+        tableView.estimatedRowHeight = 100.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func viewWillAppear(_ animated: Bool) {

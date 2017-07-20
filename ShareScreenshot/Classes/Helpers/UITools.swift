@@ -10,6 +10,7 @@ import UIKit
 extension Bundle {
     
     // Shortcut for accessing Pod's bundle
+    @nonobjc
     static func podBundle(for anyClass: AnyClass = UITools.self) -> Bundle? {
         let rootBundle = Bundle(for: anyClass)
         guard let url = rootBundle.url(forResource: "ShareScreenshot", withExtension: "bundle") else {
@@ -23,12 +24,10 @@ extension Bundle {
 
 // All UI helpers
 class UITools {
-    // Main Pod's Storyboard name
-    private static let shareScreenshotStoryboard: String = "ShareScreenshot"
-    
     // Initial Nav Controller
+    @nonobjc
     static var shareScreenshotNavigation: UINavigationController? {
-        return UIStoryboard(name: shareScreenshotStoryboard, bundle: Bundle.podBundle()).instantiateInitialViewController() as? UINavigationController
+        return UIStoryboard(name: "ShareScreenshot", bundle: Bundle.podBundle()).instantiateInitialViewController() as? UINavigationController
     }
 }
 
@@ -54,6 +53,7 @@ extension UIColor {
     }
     
     // Default Apple's blue color
+    @nonobjc
     static var standardBlue: UIColor = UIColor(hexString: "007AFF")
     
 }

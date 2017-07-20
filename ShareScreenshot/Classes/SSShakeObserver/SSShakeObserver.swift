@@ -54,8 +54,10 @@ extension UIWindow {
 
 class SSShakeObserver {
     
+    @nonobjc
     static let shared: SSShakeObserver = SSShakeObserver()
     
+    @nonobjc
     fileprivate static let shakeNotificationName = Notification.Name(rawValue: "SSShakeObserverOnShakeNotification")
     private var isObservingMotionShake = false
     
