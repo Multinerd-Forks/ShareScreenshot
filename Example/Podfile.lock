@@ -1,0 +1,22 @@
+PODS:
+  - jot (0.1.5):
+    - Masonry (~> 0.6.1)
+  - Masonry (0.6.4)
+  - ShareScreenshot (0.1.0):
+    - jot
+
+DEPENDENCIES:
+  - ShareScreenshot (from `../`)
+
+EXTERNAL SOURCES:
+  ShareScreenshot:
+    :path: ../
+
+SPEC CHECKSUMS:
+  jot: 0f5dc333defa6ad805d01adc3834b201c22510a7
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  ShareScreenshot: 686e51bc34453327d3cc671777c5448847bc261a
+
+PODFILE CHECKSUM: 7daf158d401e930818781a38768eb44807f63969
+
+COCOAPODS: 1.2.1

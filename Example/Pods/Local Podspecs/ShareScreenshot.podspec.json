@@ -1,0 +1,33 @@
+{
+  "name": "ShareScreenshot",
+  "version": "0.1.0",
+  "summary": "A short description of ShareScreenshot.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/adanilyak/ShareScreenshot",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "adanilyak": "adanilyak@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/adanilyak/ShareScreenshot.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/adanilyak",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ShareScreenshot/Classes/**/*",
+  "resource_bundles": {
+    "ShareScreenshot": [
+      "ShareScreenshot/Assets/*.{lproj,storyboard,xib,xcassets}"
+    ]
+  },
+  "dependencies": {
+    "jot": [
+
+    ]
+  }
+}

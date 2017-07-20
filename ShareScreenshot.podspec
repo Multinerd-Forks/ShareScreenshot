@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ShareScreenshot'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ShareScreenshot.'
+  s.summary          = 'Send screenshots with annotations and text with ease.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    ShareScreenshot is a library that can take screenshot in any place of your app by shaking your device.
+    It's super usefull for QA teams for sharing UI bug reports with Dev teams by Mail, iMessage and etc.
+    Also it's possible to define your own way to share, for example create bug in Jira or post to Slack channel.
                        DESC
 
   s.homepage         = 'https://github.com/adanilyak/ShareScreenshot'
@@ -26,17 +28,17 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'adanilyak' => 'adanilyak@gmail.com' }
   s.source           = { :git => 'https://github.com/adanilyak/ShareScreenshot.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/adanilyak'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ShareScreenshot/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ShareScreenshot' => ['ShareScreenshot/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'ShareScreenshot' => ['ShareScreenshot/Assets/*.{lproj,storyboard,xib,xcassets}']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'jot'
 end
