@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import jot
 
 // This protocol used for updating editor parameters with values in menu
 protocol SSEditMenuProtocol: class {

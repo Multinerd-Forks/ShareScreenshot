@@ -1,9 +1,7 @@
 PODS:
-  - jot (0.1.5):
-    - Masonry (~> 0.6.1)
-  - Masonry (0.6.4)
-  - ShareScreenshot (0.1.0):
-    - jot
+  - Masonry (1.0.2)
+  - ShareScreenshot (0.1.1):
+    - Masonry (~> 1.0.1)
 
 DEPENDENCIES:
   - ShareScreenshot (from `../`)
@@ -13,9 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  jot: 0f5dc333defa6ad805d01adc3834b201c22510a7
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  ShareScreenshot: 4502707d29e368bbdc41e3671fbca189b5794333
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ShareScreenshot: ba5a118ba0fae20315b158207dc012e5945be4c0
 
 PODFILE CHECKSUM: 7daf158d401e930818781a38768eb44807f63969
 
