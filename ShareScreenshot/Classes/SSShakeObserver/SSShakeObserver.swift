@@ -52,14 +52,14 @@ extension UIWindow {
     
 }
 
-public class SSShakeObserver {
+class SSShakeObserver {
     
-    public static let shared: SSShakeObserver = SSShakeObserver()
+    static let shared: SSShakeObserver = SSShakeObserver()
     
     fileprivate static let shakeNotificationName = Notification.Name(rawValue: "SSShakeObserverOnShakeNotification")
     private var isObservingMotionShake = false
     
-    public func start() {
+    func start() {
         isObservingMotionShake = true
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(shakeOccured(notification:)),
@@ -67,7 +67,7 @@ public class SSShakeObserver {
                                                object: nil)
     }
     
-    public func stop() {
+    func stop() {
         isObservingMotionShake = false
         NotificationCenter.default.removeObserver(self)
     }

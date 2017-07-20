@@ -28,6 +28,9 @@ class SSEditMenuViewController: UITableViewController {
         colorsCollectionView.delegate = self
         colorsCollectionView.dataSource = self
         
+        // Labels
+        discardLabel.text = String.localized(key: "ssscreenshot.edit.discardAndClose")
+        saveLabel.text = String.localized(key: "ssscreenshot.edit.saveAndClose")
     }
     
     // MARK: Weight
@@ -42,6 +45,11 @@ class SSEditMenuViewController: UITableViewController {
     // MARK: Colors
     
     @IBOutlet weak var colorsCollectionView: UICollectionView!
+    
+    // MARK: Labels
+    
+    @IBOutlet weak var discardLabel: UILabel!
+    @IBOutlet weak var saveLabel: UILabel!
     
 }
 

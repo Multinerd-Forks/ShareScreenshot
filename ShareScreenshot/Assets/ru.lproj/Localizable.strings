@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Alexander Danilyak on 20/07/2017.
+  
+*/
+
+"ssscreenshot.cancel" = "Отмена";
+"ssscreenshot.share" = "Поделиться";
+"ssscreenshot.info" = "Инфо";
+"ssscreenshot.edit.menu" = "Меню";
+"ssscreenshot.edit.discardAndClose" = "Отменить и Закрыть";
+"ssscreenshot.edit.saveAndClose" = "Сохранить и Закрыть";

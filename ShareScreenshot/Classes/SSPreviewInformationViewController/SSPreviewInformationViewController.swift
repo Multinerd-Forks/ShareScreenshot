@@ -16,7 +16,7 @@ protocol SSPreviewInformationProtocol: class {
 class SSPreviewInformationViewController: UITableViewController {
     
     // MARK: Outlets
-    @IBOutlet var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     
     // MARK: Properties
@@ -31,6 +31,9 @@ class SSPreviewInformationViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cancelButton.title = String.localized(key: "ssscreenshot.cancel")
+        shareButton.title = String.localized(key: "ssscreenshot.share")
+        title = String.localized(key: "ssscreenshot.info")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +51,8 @@ class SSPreviewInformationViewController: UITableViewController {
             return
         }
         
-        let shareVC = UIActivityViewController(activityItems: i.getActivityItems(), applicationActivities: nil)
+        let shareVC = UIActivityViewController(activityItems: i.getActivityItems(),
+                                               applicationActivities: SSShareScreenshotManager.shared.customActivities)
         present(shareVC, animated: true, completion: nil)
     }
     

@@ -122,6 +122,7 @@
                                     <constraint firstAttribute="height" constant="34" id="5Fx-nb-7v2"/>
                                     <constraint firstAttribute="width" constant="80" id="VkR-hc-r4x"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Menu">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -325,6 +326,8 @@
                     </tableView>
                     <connections>
                         <outlet property="colorsCollectionView" destination="UnD-Ye-lni" id="HlK-da-nKz"/>
+                        <outlet property="discardLabel" destination="anf-YB-b3v" id="s8A-tT-fiN"/>
+                        <outlet property="saveLabel" destination="2Ov-YD-atb" id="73O-aI-Gpj"/>
                         <outlet property="weightSlider" destination="WT5-h4-Mvo" id="hvp-3t-jcl"/>
                     </connections>
                 </tableViewController>

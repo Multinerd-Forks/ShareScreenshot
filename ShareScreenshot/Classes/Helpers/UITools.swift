@@ -57,3 +57,20 @@ extension UIColor {
     static var standardBlue: UIColor = UIColor(hexString: "007AFF")
     
 }
+
+extension String {
+    
+    // Shortcut for localized string
+    static func localized(key: String) -> String {
+        guard let bundle = Bundle.podBundle() else {
+            return key
+        }
+        
+        return NSLocalizedString(key,
+                                 tableName: "Localizable",
+                                 bundle: bundle,
+                                 value: "",
+                                 comment: "")
+    }
+    
+}

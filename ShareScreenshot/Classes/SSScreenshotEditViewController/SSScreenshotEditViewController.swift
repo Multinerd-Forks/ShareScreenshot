@@ -46,6 +46,14 @@ class SSScreenshotEditViewController: UIViewController {
         jotVC.state = .drawing
         
         applyEditSettings()
+        
+        settingsButton.layer.shadowColor = UIColor.black.cgColor
+        settingsButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        settingsButton.layer.shadowRadius = 3.0
+        settingsButton.layer.shadowOpacity = 0.21
+        
+        settingsButton.setTitle(String.localized(key: "ssscreenshot.edit.menu"),
+                                for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
