@@ -12,3 +12,5 @@
 "ssscreenshot.edit.menu" = "Меню";
 "ssscreenshot.edit.discardAndClose" = "Отменить и Закрыть";
 "ssscreenshot.edit.saveAndClose" = "Сохранить и Закрыть";
+"ssscreenshot.error" = "Ошибка";
+"ssscreenshot.ok" = "Ok";

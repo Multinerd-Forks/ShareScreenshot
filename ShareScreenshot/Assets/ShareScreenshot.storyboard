@@ -46,18 +46,18 @@
                                     <outlet property="screenshotImageView" destination="RE8-27-Nd6" id="C8G-ca-End"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="descriptionCell" rowHeight="100" id="H0C-K0-KdK" customClass="DescriptionCell" customModule="ShareScreenshot" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="278" width="375" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="descriptionCell" rowHeight="200" id="H0C-K0-KdK" customClass="DescriptionCell" customModule="ShareScreenshot" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="278" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H0C-K0-KdK" id="L2u-Va-LKi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5VO-sH-E70">
-                                            <rect key="frame" x="8" y="0.0" width="359" height="99.5"/>
+                                            <rect key="frame" x="8" y="0.0" width="359" height="200"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="geu-s7-6bV"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="geu-s7-6bV"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -342,7 +342,7 @@
             <objects>
                 <navigationController storyboardIdentifier="shareScreenshotNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vyA-cY-pau" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZIv-GV-ZOU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZIv-GV-ZOU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
