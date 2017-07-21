@@ -60,17 +60,6 @@ class SSPreviewInformationViewController: UITableViewController {
         shareVC.completionWithItemsHandler = { [unowned self] _, completed, _, error in
             if completed {
                 self.dismiss(animated: true, completion: nil)
-            } else {
-                let alert = UIAlertController(title: String.localized(key: "ssscreenshot.error"),
-                                              message: error?.localizedDescription,
-                                              preferredStyle: .alert)
-                let cancel = UIAlertAction(title: String.localized(key: "ssscreenshot.ok"),
-                                           style: .cancel,
-                                           handler: nil)
-                alert.addAction(cancel)
-                self.present(alert,
-                             animated: true,
-                             completion: nil)
             }
         }
         
