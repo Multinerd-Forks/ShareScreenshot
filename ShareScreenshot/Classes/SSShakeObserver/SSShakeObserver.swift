@@ -29,25 +29,38 @@ extension UIWindow {
     ///
     /// - Returns: screenshot
     func captureScreenshot() -> UIImage? {
-        guard let rootVC = rootViewController else {
-            return nil
-        }
-        
         let scale = UIScreen.main.scale
-        let bounds = rootVC.view.bounds
+        let bounds = layer.bounds
         UIGraphicsBeginImageContextWithOptions(bounds.size,
                                                false,
                                                scale)
 
-        guard let _ = UIGraphicsGetCurrentContext() else {
+        guard let context = UIGraphicsGetCurrentContext() else {
             return nil
         }
+    
+        layer.render(in: context)
         
-        rootVC.view.drawHierarchy(in: bounds,
-                                  afterScreenUpdates: true)
         let screenshot = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return screenshot
+    }
+    
+    fileprivate class func topViewController(base: UIViewController?) -> UIViewController? {
+        if let navigation = base as? UINavigationController {
+            return topViewController(base: navigation)
+        }
+        
+        if let tab = base as? UITabBarController,
+            let selected = tab.selectedViewController {
+                return topViewController(base: selected)
+        }
+        
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        
+        return base
     }
     
 }
@@ -89,7 +102,11 @@ class SSShakeObserver {
             previewVC.info = info
         }
         
-        rootVC.present(shareScreenshotNav, animated: true, completion: nil)
+        guard let topVC = UIWindow.topViewController(base: rootVC) else {
+            return
+        }
+        
+        topVC.present(shareScreenshotNav, animated: true, completion: nil)
     }
     
 }
