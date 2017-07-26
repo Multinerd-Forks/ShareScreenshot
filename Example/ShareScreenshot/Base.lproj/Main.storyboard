@@ -70,10 +70,11 @@
                             <constraint firstItem="qZa-FW-lnR" firstAttribute="top" secondItem="avV-IN-ezF" secondAttribute="bottom" constant="10" id="kzy-Pp-SUM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8rI-0d-aZd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="90.404797601199405"/>
+            <point key="canvasLocation" x="1076" y="90.404797601199405"/>
         </scene>
     </scenes>
 </document>

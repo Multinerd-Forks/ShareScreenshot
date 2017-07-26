@@ -47,8 +47,9 @@ extension UIWindow {
     }
     
     fileprivate class func topViewController(base: UIViewController?) -> UIViewController? {
-        if let navigation = base as? UINavigationController {
-            return topViewController(base: navigation)
+        if let navigation = base as? UINavigationController,
+            let visibleController = navigation.visibleViewController {
+            return topViewController(base: visibleController)
         }
         
         if let tab = base as? UITabBarController,
